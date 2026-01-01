@@ -50,3 +50,23 @@
 #     return name
 
 # student("asminnn")
+
+#nested loop
+
+# def outer(a):
+#     def inner():
+#         if(a==1234):
+           
+#             return  print("access granted")
+#         else:
+#             return print("access denied")
+#     return inner()
+
+# outer(1238)
+
+# num=10
+# a=(lambda x: "even" if x%2==0 else"odd")(num)
+# print(a)
+a=30
+b=20
+print((lambda x,y: "a is gratter" if x>y else "b is greatest  " "a is smallest" if x<b else"b is smallest")(a,b))
