@@ -1,0 +1,69 @@
+
+asmin@Asmin MINGW64 ~
+$ ssh-keygen -t rsa -b 4096 -^Casminlamichhane02@gmail.com"
+
+asmin@Asmin MINGW64 ~
+$
+
+asmin@Asmin MINGW64 ~
+$ ssh-keygen -t rsa -b 4096 -^Casminlamichhane02@gmail.com"
+
+asmin@Asmin MINGW64 ~
+$ ssh-keygen -t rsa -b 4096 -C "asminlamichhane02@gmail.com"
+Generating public/private rsa key pair.
+Enter file in which to save the key (/c/Users/asmin/.ssh/id_rsa):
+Created directory '/c/Users/asmin/.ssh'.
+Enter passphrase for "/c/Users/asmin/.ssh/id_rsa" (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/asmin/.ssh/id_rsa
+Your public key has been saved in /c/Users/asmin/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:wWuegAtqEteWjvNuyKj4SsedyAtG44cB3vVkc0Ii18o asminlamichhane02@gmail.com
+The key's randomart image is:
++---[RSA 4096]----+
+|   . o..         |
+|    o oo         |
+|.   ...=o.       |
+|o ...E+ +o       |
+|.=o.= ..S        |
+|o+*=o..+ .       |
+|oXoBoo  o        |
+|B *oo            |
+|=o.+o            |
++----[SHA256]-----+
+
+asmin@Asmin MINGW64 ~
+$ eval "$(ssh-agent -s)"
+Agent pid 403
+
+asmin@Asmin MINGW64 ~
+$ $ ssh _add -/.ssh/id_rsa
+bash: $: command not found
+
+asmin@Asmin MINGW64 ~
+$  ssh _add -/.ssh/id_rsa
+ssh: unknown option -- /
+usage: ssh [-46AaCfGgKkMNnqsTtVvXxYy] [-B bind_interface] [-b bind_address]
+           [-c cipher_spec] [-D [bind_address:]port] [-E log_file]
+           [-e escape_char] [-F configfile] [-I pkcs11] [-i identity_file]
+           [-J destination] [-L address] [-l login_name] [-m mac_spec]
+           [-O ctl_cmd] [-o option] [-P tag] [-p port] [-R address]
+           [-S ctl_path] [-W host:port] [-w local_tun[:remote_tun]]
+           destination [command [argument ...]]
+       ssh [-Q query_option]
+
+asmin@Asmin MINGW64 ~
+$ cat ~/.ssh/id_rsa.pub
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQC54W5SE678ghstS7YHyDYdoOVzyISfiqArM1/nlaY5w7EIFGfERM30JRzy6QprbSOpthP4oVZcYqEpp9ZSADgBj5b6moNFs5aZLvSWdCo54FoovBOza+zthE6/ux/YrOoKMxI/3vz+aFA326TpTlpSEd8/pstjs373s+SzzVMs4ZtDGXnNB3wBT5XS9SoRcemI2GYAOzMzzXqPdcC6SDxKQEpG2JbsaR3BVDfNMEbuaJB+4CJZYAP1NwClSNS099Oh8foLQtTkO3QMIvwKPzduzxTu1qKYjSb6Fr672Gv+fd/Mq/AExX0QEFdJYkeiWy2B5hN7el1sl7iWYKhhwR2rtln8lfMfx+3eMEChrVlknBa4ojfipPjBtB9RBJQtYtxhM3bAZvKfguV8fY8Yk7KvlLNMfaEaeQtqUyQQjW4JZIEOJeZvjkNGiTED9Odg8CMdhtIh5d6zg4g6T0OhNnTW2eYigStHnVX4pjN0guCxghdB3V5XFaBfZVf2jkGxwFbgLCxTsS/xPsiTfzO8FgwZdYuM5EnJy7Hu8tVyTuwWw0MydaCMYD60f6/1tDkCFDXuJVwqQsI0OI4XTo67lN2J5RW/Mz/HnQ3MAVKDJldX0aGJ55PMB+ziu1Xs+EVpt/GCpQccfsk+vMf+ALtccy7NLOLwkuHenPHwD2KOEmXFbw== asminlamichhane02@gmail.com
+
+asmin@Asmin MINGW64 ~
+$ ssh -T git@github.com
+The authenticity of host 'github.com (20.205.243.166)' can't be established.
+ED25519 key fingerprint is SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'github.com' (ED25519) to the list of known hosts.
+Hi Asmin-lamichhane! You've successfully authenticated, but GitHub does not provide shell access.
+
+asmin@Asmin MINGW64 ~
+$
